@@ -9,3 +9,5 @@
 {"level":"error","message":"\n      Thu Feb 16 2023 19:11:07 GMT+0530 (India Standard Time)-{}\n      ","private":true}
 {"level":"error","message":"\n      Thu Feb 16 2023 19:12:06 GMT+0530 (India Standard Time)-{\"statusCode\":500,\"isOperational\":true,\"errorStack\":true}\n      ","private":true}
 {"level":"error","message":"\n      Thu Feb 16 2023 19:27:58 GMT+0530 (India Standard Time)-{\"statusCode\":500,\"isOperational\":true,\"errorStack\":true}\n      ","private":true}
+{"level":"error","message":"\n      Fri Feb 17 2023 10:06:50 GMT+0530 (India Standard Time)-{\"statusCode\":500,\"isOperational\":true,\"errorStack\":true}\n      ","private":true}
+{"level":"error","message":"\n      Fri Feb 17 2023 10:06:52 GMT+0530 (India Standard Time)-{\"statusCode\":500,\"isOperational\":true,\"errorStack\":true}\n      ","private":true}
