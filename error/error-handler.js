@@ -7,14 +7,15 @@ const STATUS_CODES = {
 };
 class AppError extends Error {
   constructor(
-    message="this will hapen",
+    message,
     statusCode,
     isOperational,
-    errorStack=true,
-    logingErrorResponse
+    errorStack,
+    logingErrorResponse,
+    description
   ) {
     // super();
-    super(message, statusCode, isOperational, errorStack);
+    super(description);
     Object.setPrototypeOf(this, new.target.prototype);
     this.message = message;
     this.statusCode = statusCode;
@@ -27,12 +28,8 @@ class AppError extends Error {
 
 //api Specific Errors
 class APIError extends AppError {
-  constructor(
-    message="Internal ma vandho",
-    statusCode = STATUS_CODES.INTERNAL_ERROR,
-    isOperational = true
-  ) {
-    super(message, statusCode, isOperational);
+  constructor(message = " is this") {
+    super(message, 409, true);
   }
 }
 
@@ -51,7 +48,7 @@ class BadRequestError extends AppError {
 
 //400
 class ValidationError extends AppError {
-  constructor(message = "Validation Error", errorStack) {
+  constructor(errorStack) {
     super(
       "Validation Ka Issue",
       STATUS_CODES.BAD_REQUEST,
